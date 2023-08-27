@@ -1,5 +1,5 @@
 import { addUser } from './add-user';
-import { createSession } from './create-seession';
+import { createSession } from './create-session';
 import { getUser } from './get-user';
 
 export const server = {
