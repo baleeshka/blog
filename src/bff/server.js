@@ -32,17 +32,17 @@ export const server = {
 			},
 		};
 	},
-	register(regLogin, regPassword) {
-		const user = getUser(regLogin);
+	async register(regLogin, regPassword) {
+		const existedUser = await getUser(regLogin);
 
-		if (user) {
+		if (existedUser) {
 			return {
 				error: 'Пользователь с таким именем уже существует',
 				res: null,
 			};
 		}
 
-		addUser(regLogin, regPassword);
+		const user = await addUser(regLogin, regPassword);
 
 		return {
 			error: null,
