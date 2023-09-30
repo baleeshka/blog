@@ -54,7 +54,6 @@ const RegistrationContainer = ({ className }) => {
 				setServerError(`Ошибка запроса: ${error}`);
 				return;
 			}
-
 			dispatch(setUser(res));
 		});
 	};

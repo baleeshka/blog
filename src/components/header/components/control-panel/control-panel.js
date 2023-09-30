@@ -22,12 +22,6 @@ const UserName = styled.div`
 	font-weight: bold;
 `;
 
-const StyledIcon = styled.div`
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
 const ControlPanelContainer = ({ className }) => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
@@ -45,20 +39,20 @@ const ControlPanelContainer = ({ className }) => {
 				) : (
 					<>
 						<UserName>{login}</UserName>{' '}
-						<StyledIcon>
-							<Icon
-								id=" fa-sign-out"
-								margin="0 0 0 15px"
-								onClick={() => dispatch(logout(session))}
-							/>
-						</StyledIcon>
+						<Icon
+							id=" fa-sign-out"
+							margin="0 0 0 15px"
+							onClick={() => dispatch(logout(session))}
+						/>
 					</>
 				)}
 			</RightAligned>
 			<RightAligned>
-				<StyledIcon onClick={() => navigate(-1)}>
-					<Icon id="fa-chevron-left" margin="10px 7px 0 0" />
-				</StyledIcon>
+				<Icon
+					id="fa-chevron-left"
+					margin="10px 7px 0 0"
+					onClick={() => navigate(-1)}
+				/>
 
 				<Link to="/post">
 					<Icon id="fa-newspaper-o" margin="10px 4px 0 15px" />
