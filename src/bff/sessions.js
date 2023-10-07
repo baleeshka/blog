@@ -1,7 +1,6 @@
 import { addSession, deleteSession, getSession } from './api';
 
 export const sessions = {
-	list: {},
 	create(user) {
 		const hash = Math.random().toFixed(50);
 		addSession(hash, user);

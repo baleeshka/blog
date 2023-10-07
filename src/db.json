@@ -98,36 +98,7 @@
       "published_at": "2077-06-01"
     }
   ],
-  "comments": [
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2044-02-17",
-      "content": "фывфыв",
-      "id": 1
-    },
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2034-01-13",
-      "content": "авыаыв",
-      "id": 2
-    },
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2036-06-26",
-      "content": "выфвфыв",
-      "id": 3
-    },
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2060-06-28",
-      "content": "Мой 4 комментарий\n",
-      "id": 4
-    }
-  ],
+  "comments": [],
   "sessions": [
     {
       "hash": "0.84040779221555439448820834513753652572631835937500",
@@ -139,6 +110,17 @@
         "roleId": 0
       },
       "id": 1
+    },
+    {
+      "hash": "0.25899987627607168327870112989330664277076721191406",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registeredAt": "2077-09-22",
+        "roleId": 0
+      },
+      "id": 2
     }
   ]
 }
