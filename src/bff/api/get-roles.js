@@ -1,2 +1,2 @@
 export const getRoles = () =>
-	fetch('http://localhost:3005/roles').then((loadedUsers) => loadedUsers.json());
+	fetch('http://localhost:3005/roles').then((loadedRoles) => loadedRoles.json());
